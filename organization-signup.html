@@ -4,66 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organization Sign Up</title>
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
     <link rel="stylesheet" href="org-sign.css">
 </head>
 <body>
     <header data-aos="fade-down" class="navbar">
         <div class="container-1">
             <h1 class="logo">Interns</h1>
+            <button title="Go back to sign-up page" onclick="sign()">Sign-up</button>
         </div>
     </header>
     <div class="container">
         <form data-aos="fade-center" action="" id="reg">
         <h2>Sign Up</h2>
-        <div class="form-group">
+        <div data-aos="fade-right" class="form-group">
             <label for="org-name">Organization Name:</label>
             <input type="text" id="org-name" placeholder="Enter Organization name" required>
         </div>
-            <div class="form-group">
+            <div  data-aos="fade-left" class="form-group">
                 <label for="org-name">POC Full Name:</label>
                 <input type="text" id="org-name" placeholder="Enter full name" required>
             </div>
-            <div class="form-group">
+            <div data-aos="fade-right" class="form-group">
                 <label for="email">POC Email:</label>
                 <input type="email" id="email" placeholder="Enter email">
             </div>
-            <div class="form-group">
+            <div  data-aos="fade-left" class="form-group">
                 <label for="email">POC Phone:</label>
                 <input type="text" id="phone" placeholder="Enter phone number" required>
             </div>
-            <div class="form-group">
+            <div data-aos="fade-right" class="form-group">
                 <label for="industry">Organization Type:</label>
-                <select id="Organization Type" required>
+                <select id="Organization_Type" required>
                     <option value="">Select Organization Type</option>
                     <option value="tech">Technology</option>
                     <option value="finance">Finance</option>
                     <option value="healthcare">Healthcare</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div  data-aos="fade-left" class="form-group">
                 <label for="state">State of Internship Placement:</label>
                 <input type="text" id="state" placeholder="Enter State">
             </div>
-            <div class="form-group">
+            <div data-aos="fade-right" class="form-group">
                 <label for="lg">Local Government:</label>
                 <input type="text" id="lg" placeholder="Enter local Government area" required>
             </div>
-            <div class="form-group">
+            <div  data-aos="fade-left" class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" required>
             </div>
-            <div class="form-group">
+            <div data-aos="fade-right" class="form-group">
                 <label for="confirm-password">Confirm Password:</label>
                 <input type="password" id="confirm-password" required>
             </div>
             
-            <button type="submit">Sign Up</button>
+            <button data-aos="fade-left" id="submit" type="submit">Sign Up</button>
         </form>
         <div data-aos="fade-left" class="img">
             <img src="up.png" alt="">
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+          delay: 100,
+        });
+      </script>
+    <script src="org.js"></script>
 </body>
 </html>
