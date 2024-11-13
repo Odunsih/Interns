@@ -22,7 +22,7 @@ function reg(event) {
         window.location.href = "general.html";
     } else if (username === storedUserData.email && password === storedUserData.password) {
         // If email matches, redirect to organization homepage
-        window.location.href = "organization-general.html";
+        window.location.href = "org-gen.html";
     } else {
         // Show error popup if credentials are incorrect
         showPopup("Invalid username or password. Please try again.");
