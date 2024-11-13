@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="fellow-profile.css">
+    <title>Fellow profile</title>
+</head>
+<body>
+    <!----------- nav ---------->
+    <nav>
+        <label class="logo">Intern</label>
+        <div class="searchicon"><i class="bi bi-search"></i><input type="text" class="top-input" placeholder=" Search available intern"></div>
+            <button class="top-search">Search</button>
+        <!-- <ul>
+            <li><a class="active" href="#">Organization</a></li>
+            <li><a class="active" href="#">Graduates</a></li>
+        </ul> -->
+        <div class="dropdown">
+            <button class="dropbtn"><i class="bi bi-gear"></i> Account <i class="bi bi-chevron-down"></i></button>
+            <div class="dropdown-contents">
+               <button onclick="out()" class="sign-outbtn">sign-out</button>
+                <a href="general.html">Home</a>
+                <a href="">Settings</a>
+                <a href="">Applied Intern</a>
+            </div>
+        </div>
+    </nav>
+<!----------- section ------------------>
+    <section>
+        <div class="prof">
+            <img class="profile" src="switch.jpg" alt="profile picture">
+        </div>
+        <div class="info">
+            <h2>Gambo Bamidele Uche</h2>
+            <h3>Fellow at 3MTT</h3>
+            <p>Kaduna, Kaduna state, Nigeria . <a href="">Contact info</a></p>
+            <button>view portfolio</button><button>edit profile</button>
+        </div>
+        <div class="about">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Veniam excepturi, deleniti corrupti dicta doloremque cupiditate nobis quidem aliquid odit laborum 
+                eos velit expedita temporibus aperiam magnam? 
+                Mollitia tempora exercitationem voluptatem?</p>
+        </div>
+        <div class="edu">
+            <h3>Education</h3>
+            <h4>Kaduna polytechnic</h4>
+            <h5>Higher National Diploma, Electrical and Electronics Engineering</h5>
+            <p>June 2023 - Dec 2024</p>
+        </div>
+        <div class="cert">
+           <h3>Certificate</h3>
+           <h4>Communication Foundation (2018)</h4> 
+           <h5>Linkedin</h5>
+           <button>Show credential</button>
+        </div>
+        <div class="skill">
+            <h3>Skills</h3>
+            <h4>Front-End Development</h4>
+        </div>
+    </section>
+    <footer>
+        <a href="">About</a>
+        <a href="">Contact us</a>
+        <a href="">Settings</a>
+        <p> Interns &copy; 2024 </p>
+    </footer>
+</body>
+<script src="fellow-profile.js"></script>
+</html>

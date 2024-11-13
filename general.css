@@ -1,0 +1,234 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  /*background-image: url(up.png);*/
+}
+nav{
+  display: flex;
+  background: skyblue;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+label {
+  font-family: "passero";
+}
+
+.top-input {
+  width: 593px;
+  height: 38px;
+  border-radius: 10px;
+  border: #201D1D solid 1px;
+  font-size: 20px;
+  border-style: none;
+
+}
+
+.searchicon {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-left: 10px;
+  height: 38px;
+  margin-top: 20px;
+}
+
+.top-search {
+      width: 121px;
+      height: 38px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      background-color: #1995ad;
+      box-shadow: 3px 3px 10px #413d3d;
+      border-style: none;
+      margin-top: 20px;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  width: 148px;
+  height: 38px;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #D9D9D9;
+  margin-right: 200px;
+  margin-top: 20px;
+ 
+
+}
+
+.dropbtn {
+  background-color: #D9D9D9;
+  border-style: none;
+  width: 148px;
+  height: 38px;
+  font-weight: 400;
+  font-size: 20px;
+
+
+}
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  width: 339px;
+  height: 312px;
+  align-items: center;
+  text-align: left;
+  border-radius: 20px;
+
+
+}
+
+.dropdown-contents .sign-outbtn, a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.sign-outbtn {
+  width: 80%;
+  height: 62px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #5F50F9;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 500;
+  margin: 15px 50px 0 35px;
+  box-shadow: 1px 1px 10px black;
+  cursor: pointer;
+}
+
+a{
+  margin: 15px;
+  font-size: 25px;
+}
+
+.dropdown:hover .dropdown-contents {
+  display: block;
+}
+
+label.logo{
+  color: rgb(36, 36, 245);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-left: 100px;
+  padding-bottom: 600px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:  rgb(36, 36, 245);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+/* a.active,a:hover{
+  background: ;
+  transition: .10s;
+} */
+/* .checkbtn{
+  font-size: 30px;
+  color: aliceblue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+} */
+/* .sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: skyblue;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px paleturquoise;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+} */
+/* .sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width 100%;
+} */
+
+.companies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.company-container {
+  display: inline-flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 85%;
+  
+}
+
+.company-logo {
+  width: 50%;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.company-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.company-info {
+  flex-grow: 1;
+}
+
+.company-info h2 {
+  font-weight: bold;
+  
+}
+
+.company-info button {
+  background-color: rgb(64, 64, 250);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+@font-face {
+  font-family: "passero";
+  src: url(PasseroOne-Regular.ttf);
+}
