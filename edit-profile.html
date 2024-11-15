@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit-profile.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Edit Profile</h2>
+        <form id="editProfileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+        
+            <label for="about">About:</label>
+            <textarea id="about" name="about"></textarea>
+        
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education">
+        
+            <label for="portfolioLink">Portfolio Link:</label>
+            <input type="url" id="portfolioLink" name="portfolioLink" placeholder="https://example.com">
+        
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+        
+            <label for="certificates">Certificates (PDF only):</label>
+            <input type="file" id="certificates" name="certificates" accept="application/pdf" multiple>
+        
+            <button type="submit">Save</button>
+        </form>
+        
+    </div>
+
+    <script src="edit-profile.js"></script>
+</body>
+</html>

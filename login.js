@@ -1,6 +1,17 @@
+function login(username) {
+    // Simulate login
+    localStorage.setItem("currentUser", username);
+
+    // Redirect to the fellow profile page
+    window.location.href = "fellow-profile.html";
+}
+
 function out() {
+    // Clear current user and redirect to the login page
+    localStorage.removeItem("currentUser");
     window.location.href = "index.html";
 }
+
 
 function reg(event) {
     event.preventDefault(); // Prevent form submission
