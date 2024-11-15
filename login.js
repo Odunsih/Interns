@@ -18,6 +18,8 @@ function reg(event) {
 
     // Check if entered password matches the stored password
     if (username === storedUserData.fellowID && password === storedUserData.password) {
+          // Save the fellow ID in localStorage for the customized page
+          localStorage.setItem("currentFellowID", storedUserData.fellowID);
         // If fellow ID matches, redirect to fellow homepage
         window.location.href = "general.html";
     } else if (username === storedUserData.email && password === storedUserData.password) {

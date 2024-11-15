@@ -220,6 +220,42 @@ a {
 }
 
 
+@media (max-width: 1800px) {
+    h2 {
+        font-size: 34px;
+    }
+
+    input, #submit {
+        height: 40px;
+        width: 100%;
+    }
+
+    form {
+        padding: 15px;
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    img {
+        width: 700px;
+    }
+
+    .container-1 {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
 @font-face {
     font-family: "passero";
     src: url(PasseroOne-Regular.ttf);

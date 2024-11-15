@@ -117,6 +117,46 @@ button[type="submit"]:hover {
 }
 
 
+/* Popup Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #00416A;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Hide Popup */
+.hidden {
+    display: none;
+}
+
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -197,6 +237,42 @@ button[type="submit"]:hover {
         font-size: 14px;
     }
 }
+
+
+@media (max-width: 1800px) {
+    h2 {
+        font-size: 34px;
+    }
+
+    input, #submit {
+        height: 40px;
+        width: 100%;
+    }
+
+    form {
+        padding: 15px;
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    img {
+        width: 700px;
+    }
+
+    .container-1 {
+        font-size: 14px;
+    }
+}
+
+
+
 
 @font-face {
     font-family: "passero";
