@@ -1,25 +1,80 @@
 function out() {
+    // Clear the current user and redirect to login
+    localStorage.removeItem("currentFellowID");
     window.location.href = "login.html";
+}
+
+function apply() {
+    window.location.href = "fellow-app-form.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Get the account button element where the name will be displayed
+    // Account button logic
     const accountButton = document.querySelector(".dropbtn");
-
-    // Retrieve the logged-in fellow's ID or email from localStorage
     const currentUser = localStorage.getItem("currentFellowID");
 
     if (currentUser) {
-        // Display the fellow ID or email on the Account button
         accountButton.innerHTML = `<i class="bi bi-gear"></i> ${currentUser} <i class="bi bi-chevron-down"></i>`;
     } else {
-        // Fallback if no user is logged in
         accountButton.innerHTML = `<i class="bi bi-gear"></i> Account <i class="bi bi-chevron-down"></i>`;
     }
-});
 
-function out() {
-    // Clear current user from localStorage and redirect to login
-    localStorage.removeItem("currentUser");
-    window.location.href = "login.html";
-}
+    // Display internships dynamically
+    const internshipsContainer = document.getElementById("internshipsContainer");
+    const searchInput = document.getElementById("SearchInput");
+    const searchButton = document.getElementById("Search");
+
+    function displayInternships(filter = "") {
+        const internships = JSON.parse(localStorage.getItem("internships")) || [];
+        internshipsContainer.innerHTML = ""; // Clear existing content
+
+        const filteredInternships = internships.filter((internship) =>
+            filter === "" ||
+            internship.companyName.toLowerCase().includes(filter.toLowerCase()) ||
+            internship.role.toLowerCase().includes(filter.toLowerCase()) ||
+            internship.state.toLowerCase().includes(filter.toLowerCase())
+        );
+
+        if (filteredInternships.length === 0) {
+            internshipsContainer.innerHTML = "<p>No internships found.</p>";
+            return;
+        }
+
+        filteredInternships.forEach((internship, index) => {
+            const internshipCard = document.createElement("div");
+            internshipCard.className = "company-container";
+            internshipCard.innerHTML = `
+                <div class="company-logo">
+                    <img src="732.jpg" alt="${internship.companyName}">
+                </div>
+                <div class="company-info">
+                    <h2>${internship.role}</h2>
+                    <p><strong>Company:</strong> ${internship.companyName}</p>
+                    <p><strong>Location:</strong> ${internship.state}</p>
+                    <p><strong>Type:</strong> ${internship.type}</p>
+                    <button id="apply-${index}" class="apply-button">Apply</button>
+                </div>
+            `;
+            internshipsContainer.appendChild(internshipCard);
+
+            // Add apply button functionality
+            internshipCard.querySelector(`#apply-${index}`).addEventListener("click", () => {
+                window.location.href = "fellow-app-form.html";
+            });
+        });
+    }
+
+    // Initial display
+    displayInternships();
+
+    // Search functionality
+    searchButton.addEventListener("click", () => {
+        const filterText = searchInput.value.trim();
+        displayInternships(filterText);
+    });
+
+    searchInput.addEventListener("input", () => {
+        const filterText = searchInput.value.trim();
+        displayInternships(filterText);
+    });
+});

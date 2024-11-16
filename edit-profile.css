@@ -53,3 +53,7 @@ body {
 .form-container button:hover {
     background-color: #45a049;
 }
+
+label {
+    font-size: 20px;
+}

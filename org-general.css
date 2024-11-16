@@ -89,7 +89,7 @@
     align-items: center;
     text-align: left;
     border-radius: 20px;
-  
+    margin-top: 30px;
   
   }
   
@@ -146,42 +146,6 @@
     border-radius: 3px;
     text-transform: uppercase;
   }
-  /* a.active,a:hover{
-    background: ;
-    transition: .10s;
-  } */
-  /* .checkbtn{
-    font-size: 30px;
-    color: aliceblue;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  } */
-  /* .sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: skyblue;
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px paleturquoise;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  } */
-  /* .sidebar li{
-    width: 100%;
-  }
-  .sidebar a{
-    width 100%;
-  } */
   
   .companies-container {
     display: flex;
@@ -228,6 +192,31 @@
     font-size: 16px;
     cursor: pointer;
   }
+
+  
+  /* *************footer**************** */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    margin-top: 150px;
+    background-color: #d8d6d6;
+  }
+
+  footer a {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
   @font-face {
     font-family: "passero";
     src: url(PasseroOne-Regular.ttf);

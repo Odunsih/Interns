@@ -1,9 +1,12 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-  background-color: #d4d4d4;
+.container{
+    width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: skyblue;
+    border: 1px rgb(22, 22, 161);
+    font-size: x-large;
+    font-display: center;
+    
 }
 
 nav{
@@ -14,7 +17,7 @@ nav{
     justify-content: space-between;
   }
   
-  label {
+  .logo {
     font-family: "passero";
   }
   
@@ -60,7 +63,7 @@ nav{
     font-weight: 400;
     font-size: 20px;
     background-color: #D9D9D9;
-    margin-right: 50px;
+    margin-right: 200px;
     margin-top: 20px;
    
   
@@ -69,7 +72,7 @@ nav{
   .dropbtn {
     background-color: #D9D9D9;
     border-style: none;
-    width: 148px;
+    width: 138px;
     height: 38px;
     font-weight: 400;
     font-size: 20px;
@@ -143,144 +146,80 @@ nav{
     border-radius: 3px;
     text-transform: uppercase;
   }
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+   
+    
+    
 
-  /* ************section**************** */
+}
+label{
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+}
+.submit {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 75%;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-  section {
-    width: 75%;
+select{
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* Popup Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    z-index: 1000;
+}
 
-  }
-
-  .prof {
-    background-color: #1995ad;
-    margin: 10px;
-  }
-
-  .profile {
-    border-radius: 100%;
-    width: 200px;
-    margin-top: 50px;
-    margin-left: 50px;
-  }
-
-  .info {
-    margin: 10px;
-    background-color: #fff;
-    padding: 10px;
-  }
-
-  .info h2 {
-    font-size: 30px;
-  }
-
-  .info h3 {
-    font-size: 20px;
-  }
-
-  .info p {
-    font-size: 15px;
-  }
-
-  .info p a {
-    font-size: 15px;
-    color: #5F50F9;
-  }
-
-  .info button {
-    margin: 5px;
-    background-color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    text-transform: capitalize;
-    color: #5F50F9;
-    border-color: #5F50F9;
-  }
-
-  .info button:hover {
-    background-color: #5F50F9;
+/* Popup Content */
+.popup-content {
+    background-color: #00416A;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
     color: #fff;
-  }
+}
 
-  .about {
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .about h3 {
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-size: 20px;
-  }
-
-  .about p {
-    font-size: 15px;
-  }
-
-  .edu {
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .edu h3 {
-    font-size: 20px;
-  }
-
-  .edu h4 {
-    font-size: 18px;
-  }
-
-  .edu h5 {
-    font-size: 15px;
-  }
-
-  .edu p {
-    font-size: 15px;
-    opacity: 40%;
-  }
-
-  .cert {
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .cert h3 {
-    font-size: 20px;
-  }
-
-  .cert h4 {
-    font-size: 18px;
-  }
-
-  .cert h5 {
-    font-size: 15px;
-  }
-
-  .cert button {
-    background-color: #fff;
-    border-radius: 10px;
-    font-size: 18px;
     cursor: pointer;
-  }
+}
 
-  .skill {
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
-  }
+/* Hide Popup */
+.hidden {
+    display: none;
+}
 
-  .skill h3 {
-    font-size: 20px;
-  }
-
-  .skill h4 {
-    font-size: 18px;
-  }
 
   /* *************footer**************** */
 
@@ -290,7 +229,9 @@ nav{
     justify-content: center;
     margin: 0 auto;
     padding: 10px;
-    width: 75%;
+    width: 100%;
+    margin-top: 150px;
+    background-color: #d8d6d6;
   }
 
   footer a {
@@ -301,22 +242,4 @@ nav{
     font-size: 15px;
     margin-top: 20px;
     text-align: center;
-  }
-
-
-  @media (max-width: 768px) {
-    section {
-      width: 100%;
-    }
-
-    .profile {
-      align-items: center;
-      align-content: center;
-      margin: 0 auto;
-    }
-  }
-
-  @font-face {
-    font-family: "passero";
-    src: url(PasseroOne-Regular.ttf);
   }

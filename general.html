@@ -10,34 +10,30 @@
 <body>
     <nav>
         <label class="logo">Intern</label>
-        <div class="searchicon"><input type="text" class="top-input" placeholder=" Search available internships"></div>
-            <button class="top-search">Search</button>
-        <!--<ul>
-            <li><a class="active" href="#">Organization</a></li>
-            <li><a class="active" href="#">Graduates</a></li>
-            <li onclick=showsidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul> --> 
+        <div class="searchicon"><input id="SearchInput" type="text" class="top-input" placeholder=" Search available internships"></div>
+            <button id="Search" class="top-search">Search</button>
         <div class="dropdown">
             <button class="dropbtn"><i class="bi bi-gear"></i> Account <i class="bi bi-chevron-down"></i></button>
             <div class="dropdown-contents">
                <button onclick="out()" class="sign-outbtn">sign-out</button>
                 <a href="fellow-profile.html">Profile</a>
                 <a href="">Settings</a>
-                <a href="">Applied Intern</a>
+                <a href="fellow-app.html">Applications</a>
             </div>
         </div>
      
     </nav>
-    
-      <div class="company-container">
+    <div id="internshipsContainer"></div>
+
+      <!-- <div class="company-container">
         <div class="company-logo">
           <img src="732.jpg" alt="QimTech">
         </div>
         <div class="company-info">
-          <h2>Web Developer Intern</h2>
-          <p>Qim Tech Limited</p>
-          <p>Lagos, Nigeria</p>
-          <button>Apply</button>
+          <h2 id="internshipRole">Web Developer Intern</h2>
+          <p id="companyName" >Qim Tech Limited</p>
+          <p id="state" >Lagos, Nigeria</p>
+          <button id="apply">Apply</button>
         </div>
       </div>
       <div class="company-container">
@@ -45,10 +41,10 @@
           <img src="89221.jpg" alt="QimTech">
         </div>
         <div class="company-info">
-          <h2>Product Designer Intern</h2>
-          <p>Adeniran & co</p>
-          <p>Kaduna, Nigeria</p>
-          <button>Apply</button>
+          <h2 id="internshipRole">Web Developer Intern</h2>
+          <p id="companyName" >Qim Tech Limited</p>
+          <p id="state" >Lagos, Nigeria</p>
+          <button id="apply">Apply</button>
         </div>
       </div>
       <div class="company-container">
@@ -56,10 +52,10 @@
           <img src="8_1sasa11.jpg" alt="QimTech">
         </div>
         <div class="company-info">
-          <h2>Remote Full stack Programmer</h2>
-          <p>Henry Globals</p>
-          <p>Enugu, Nigeria</p>
-          <button>Apply</button>
+          <h2 id="internshipRole">Web Developer Intern</h2>
+          <p id="companyName" >Qim Tech Limited</p>
+          <p id="state" >Lagos, Nigeria</p>
+          <button id="apply">Apply</button>
         </div>
       </div>
       <div class="company-container">
@@ -67,10 +63,10 @@
           <img src="705.jpg" alt="QimTech">
         </div>
         <div class="company-info">
-          <h2>Data Analyst Intern</h2>
-          <p>Qim Tech Limited</p>
-          <p>Abuja, Nigeria</p>
-          <button>Apply</button>
+          <h2 id="internshipRole">Web Developer Intern</h2>
+          <p id="companyName" >Qim Tech Limited</p>
+          <p id="state" >Lagos, Nigeria</p>
+          <button id="apply">Apply</button>
         </div>
       </div>
       <div class="company-container">
@@ -78,17 +74,19 @@
           <img src="christmas_2012_new_2859.jpg" alt="QimTech">
         </div>
         <div class="company-info">
-          <h2> Product Manager</h2>
-          <p>Qim Tech Limited</p>
-          <p>Kano, Nigeria</p>
-          <button>Apply</button>
+          <h2 id="internshipRole">Web Developer Intern</h2>
+          <p id="companyName" >Qim Tech Limited</p>
+          <p id="state" >Lagos, Nigeria</p>
+          <button onclick="apply()" id="apply">Apply</button>
         </div>
-      </div>
-      
-      
-    <!-- <div data-aos="fade-left" class="img">
-        <img src="up.png" alt=""> -->
-    <!-- </div> -->
+      </div> -->
+
+      <footer>
+        <a href="">About</a>
+        <a href="">Contact us</a>
+        <a href="">Settings</a>
+        <p> Interns &copy; 2024 </p>
+    </footer>
 </body>
 <script src="fellow-general.js"></script>
 </html>
