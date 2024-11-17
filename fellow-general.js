@@ -31,8 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const filteredInternships = internships.filter((internship) =>
             filter === "" ||
             internship.companyName.toLowerCase().includes(filter.toLowerCase()) ||
-            internship.role.toLowerCase().includes(filter.toLowerCase()) ||
-            internship.state.toLowerCase().includes(filter.toLowerCase())
+            internship.internshipRole.toLowerCase().includes(filter.toLowerCase()) ||
+            internship.internType.toLowerCase().includes(filter.toLowerCase()) ||
+            internship.state.toLowerCase().includes(filter.toLowerCase()) ||
+            internship.descriptions.toLowerCase().includes(filter.toLowerCase())
         );
 
         if (filteredInternships.length === 0) {
@@ -48,10 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img src="732.jpg" alt="${internship.companyName}">
                 </div>
                 <div class="company-info">
-                    <h2>${internship.role}</h2>
+                    <h2>${internship.internshipRole}</h2>
                     <p><strong>Company:</strong> ${internship.companyName}</p>
                     <p><strong>Location:</strong> ${internship.state}</p>
-                    <p><strong>Type:</strong> ${internship.type}</p>
+                    <p><strong>Type:</strong> ${internship.internType}</p>
+                    <p><strong>Descriptions:</strong> ${internship.descriptions}</p>
                     <button id="apply-${index}" class="apply-button">Apply</button>
                 </div>
             `;

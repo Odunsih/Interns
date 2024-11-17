@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <label class="logo">Intern</label>
+        <a href="org-gen.html"><img class="logo" src="logo.png" alt="logo"></a>
         <!-- <div class="searchicon"><input type="text" class="top-input" placeholder=" Search available internships"></div>
             <button class="top-search">Search</button> -->
         
@@ -31,15 +31,18 @@
     <form>
         <label>Company Name</label>
         <input id="companyName" type="text" name="name"required><br>
-        <label>State of Internship placement</label>
+        <label>Location</label>
         <input id="State" type="text" name="placement"required><br>
         <label>Internship Role</label>
         <input id="internshipRole" type="role" name="role"required><br>
+        <label for="descriptions">Descriptions</label><br>
+        <textarea name="descriptions" id="descriptions" title="describe the internships role" required></textarea><br>
         <label>Internship Type</label>
         <select id="Intern-type" required>
             <option value="cit">Choose Internship Type</option>
-            <option value="h">Hybrid</option>
-            <option value="o">On-Site</option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="on-site">On-Site</option>
+            <option value="Remote">Remote</option>
         </select><br>
         <button id="submit" class="submit" type="submit" >Submit Application</button>
     </form>

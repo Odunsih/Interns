@@ -9,9 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const state = document.getElementById("State").value;
         const internshipRole = document.getElementById("internshipRole").value;
         const internType = document.getElementById("Intern-type").value;
+        const descriptions = document.getElementById("descriptions").value;
 
         // Validate form data
-        if (!companyName || !state || !internshipRole || internType === "cit") {
+        if (!companyName || !state || !internshipRole || !descriptions || internType === "cit") {
             showPopup("Please fill in all fields!");
             return;
         }
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             state,
             internshipRole,
             internType,
+            descriptions,
         };
 
         // Save the internship to localStorage

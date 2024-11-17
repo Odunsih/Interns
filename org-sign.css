@@ -3,36 +3,35 @@ html {
 }
 
 body {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    background-color: #1995ad;
+    background-color: #3cb043;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: o auto;
 }
 
 header {
-    background-color: #a1d6e2;
+    background-color: #b0fc38;
 }
-.form-group {
-    margin-bottom: 13px;
-    
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
 
 .container-1 {
     display: flex;
     color: #2a3132;
-    font-size: 15px;
+    /* font-size: 200px; */
     padding-left: 10px;
     padding-right: 10px;
     font-family: "passero";
     justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 button {
@@ -40,7 +39,7 @@ button {
     margin-top: 10px;
     border-radius: 10px;
     font-size: 20px;
-    background-color: #1995ad;
+    background-color: #3cb043;
     color: #fff;
     border-style: none;
     cursor: pointer;
@@ -108,7 +107,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #1995ad;
+    background-color: #3cb043;
     border-radius: 10px;
 }
 

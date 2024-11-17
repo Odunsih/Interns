@@ -5,13 +5,13 @@ html {
 body {
     justify-content: center;
     align-items: center;
-    background-color: #1995ad;
+    background-color: #3cb043;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: o auto;
 }
 
 header {
-    background-color: #a1d6e2;
+    background-color: #b0fc38;
 }
 
 .container-1 {
@@ -24,6 +24,12 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    width: 200px;
+    height: 70px;
+    padding: 0;
+}
+
 h1 {
     font-size: 30px;
 }
@@ -33,7 +39,7 @@ button {
     margin-top: 10px;
     border-radius: 10px;
     font-size: 20px;
-    background-color: #1995ad;
+    background-color: #3cb043;
     color: #fff;
     border-style: none;
     cursor: pointer;
@@ -106,7 +112,7 @@ a {
 }
 
 #submit:hover {
-    background-color: #1995ad;
+    background-color: #3cb043;
     border-radius: 10px;
 }
 
