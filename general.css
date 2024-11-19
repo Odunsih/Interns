@@ -221,10 +221,7 @@ nav ul li a{
   
 }
 
-.container {
-  margin: 10px;
-  /* font-size: 10px; */
-}
+
 
 .company-logo {
   width: 50%;
@@ -299,9 +296,31 @@ nav ul li a{
 
 
 @media (max-width: 400px) {
-  .searchicon, .dropdown, .top-search {
+  .searchicon, .dropdown, .top-search, .top-input {
     display: none;
   }
+
+  #contentss {
+    width: 100%;
+  }
+
+  #contentss ul li a, button {
+    font-size: smaller;
+    margin-left: -15px;
+
+  }
+
+  .sign-outbtn, .dropbtn {
+    font-size: smaller;
+    width: 0px;
+  }
+
+  #contentss ul li button {
+    width: 50px;
+    font-size: smaller;
+
+  }
+
 
 
 }
@@ -327,6 +346,10 @@ nav ul li a{
 
   ul.topnav li a {
     font-size: 20px;
+  }
+
+  #contentss {
+    width: 30%;
   }
 
   #internshipsContainer{

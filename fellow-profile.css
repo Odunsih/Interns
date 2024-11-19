@@ -378,6 +378,31 @@ nav ul li a{
       align-content: center;
       margin: 0 auto;
     }
+    .searchicon, .dropdown, .top-search, .top-input {
+      display: none;
+    }
+  
+    #contentss {
+      width: 100%;
+    }
+  
+    #contentss ul li a, button {
+      font-size: smaller;
+      margin-left: -15px;
+  
+    }
+  
+    .sign-outbtn, .dropbtn {
+      font-size: smaller;
+      width: 0px;
+    }
+  
+    #contentss ul li button {
+      width: 50px;
+      font-size: smaller;
+  
+    }
+  
   }
 
   @font-face {
@@ -387,8 +412,29 @@ nav ul li a{
 
   
 @media (max-width: 400px) {
-  .searchicon, .dropdown, .top-search {
+  .searchicon, .dropdown, .top-search, .top-input {
     display: none;
+  }
+
+  #contentss {
+    width: 100%;
+  }
+
+  #contentss ul li a, button {
+    font-size: smaller;
+    margin-left: -15px;
+
+  }
+
+  .sign-outbtn, .dropbtn {
+    font-size: smaller;
+    width: 0px;
+  }
+
+  #contentss ul li button {
+    width: 50px;
+    font-size: smaller;
+
   }
 
 
