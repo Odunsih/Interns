@@ -8,7 +8,7 @@ function login(username) {
 
 function out() {
     // Clear current user and redirect to the login page
-    localStorage.removeItem("currentUser");
+    // localStorage.removeItem("currentUser");
     window.location.href = "index.html";
 }
 

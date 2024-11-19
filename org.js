@@ -21,7 +21,7 @@ document.getElementById("reg").addEventListener("submit", function (event) {
     }
   
     // Create user object to store in localStorage
-    const userInfo = {
+    const userData = {
       orgName,
       pocName,
       email,
@@ -31,16 +31,17 @@ document.getElementById("reg").addEventListener("submit", function (event) {
     };
   
     // Save user data to localStorage, using the email as a key to prevent duplicate entries
-    const storedUser = localStorage.getItem(email);
-    if (storedUser) {
-      showPopup("User with this email already exists.");
-      return;
-    } else {
-      localStorage.setItem(email, JSON.stringify(userInfo));
+    // const storedUser = localStorage.getItem(email);
+    // if (storedUser) {
+    //   showPopup("User with this email already exists.");
+    //   return;
+    // } else {
+      localStorage.setItem("userData", JSON.stringify(userData));
+
       showPopup("Registration successful!");
       window.location.href = "login.html"; // Redirect to login page after sign-up
     }
-  });
+  );
 
   function showPopup(message) {
     const popup = document.getElementById("popupMessage");
@@ -60,3 +61,4 @@ function closePopup() {
     popup.classList.add("hidden");
 }
   
+
