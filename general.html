@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>general page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
     <link rel="stylesheet" href="general.css">
 </head>
 <body>
     <nav>
-      <a href="general.html"><img class="logo" src="logo.png" alt="logo"></a>
-        <div class="searchicon"><input id="SearchInput" type="text" class="top-input" placeholder=" Search available internships"></div>
-            <button id="Search" class="top-search">Search</button>
-        <div class="dropdown">
-            <button class="dropbtn"><i class="bi bi-gear"></i> Account <i class="bi bi-chevron-down"></i></button>
-            <div class="dropdown-contents">
-               <button onclick="out()" class="sign-outbtn">sign-out</button>
-                <a href="fellow-profile.html">Profile</a>
-                <a href="">Settings</a>
-                <a href="fellow-app.html">Applications</a>
-            </div>
-        </div>
-     
+      <ul>
+     <li> <a href="general.html"><img class="logo" src="logo.png" alt="logo"></a></li>
+        <li><input id="SearchInput" type="text" class="top-input" placeholder=" Search available internships"></li>
+           <li><button id="Search" class="top-search">Search</button></li>           
+      </ul>
     </nav>
-    <div id="internshipsContainer"></div>
+    <div class="full">
+      <div id="contentss">
+        <ul class="topnav" id="dropdownclick">
+          <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+            <li><a class="content" href="fellow-profile.html">Profile</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="fellow-app.html">Applications</a></li>
+            <li><button onclick="out()" class="sign-outbtn">sign-out</button></li>
+            <li><button class="dropbtn"> Account </button></li>
+        </ul>
+          </div> 
+  
+      </nav>
+      <div id="internshipsContainer"></div>
+    </div>
+    
 
       <!-- <div class="company-container">
         <div class="company-logo">

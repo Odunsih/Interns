@@ -1,3 +1,18 @@
+function out() {
+    // Clear the current user and redirect to login
+    localStorage.removeItem("currentFellowID");
+    window.location.href = "login.html";
+}
+
+function dropdownMenu() {
+    var x = document.getElementById("dropdownclick");
+    if(x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const notificationsContainer = document.getElementById("notifications");
     const applications = JSON.parse(localStorage.getItem("applications")) || [];

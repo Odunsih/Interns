@@ -8,6 +8,15 @@ function apply() {
     window.location.href = "fellow-app-form.html";
 }
 
+function dropdownMenu() {
+    var x = document.getElementById("dropdownclick");
+    if(x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     // Account button logic
     const accountButton = document.querySelector(".dropbtn");
@@ -80,4 +89,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const filterText = searchInput.value.trim();
         displayInternships(filterText);
     });
+});
+
+
+
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.querySelector('.nav-links');
+
+menuIcon.addEventListener('click', () => {
+  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
 });

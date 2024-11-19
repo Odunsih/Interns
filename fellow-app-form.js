@@ -1,3 +1,18 @@
+function out() {
+    // Clear the current user and redirect to login
+    localStorage.removeItem("currentFellowID");
+    window.location.href = "login.html";
+}
+
+function dropdownMenu() {
+    var x = document.getElementById("dropdownclick");
+    if(x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submit");
 
@@ -12,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
             address: document.getElementById("address").value,
             state: document.getElementById("state").value,
             lga: document.getElementById("LGA").value,
-            university: document.getElementById("nameOfUni").value,
-            qualification: document.getElementById("Organization_Type").value,
-            course: document.getElementById("CourseOfStudy").value,
+            // university: document.getElementById("nameOfUni").value,
+            // qualification: document.getElementById("Organization_Type").value,
+            // course: document.getElementById("CourseOfStudy").value,
         };
 
         // Validate form

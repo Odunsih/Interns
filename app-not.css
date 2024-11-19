@@ -1,0 +1,145 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    /* margin: 0 auto; */
+}
+
+h2{
+    font-size: 30px;
+}
+
+.application-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.application-card h3 {
+    margin-top: 0;
+}
+
+.application-card p {
+    margin: 5px 0;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+
+  /* *************footer**************** */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    /* margin-top: 1000px; */
+    background-color: #d8d6d6;
+  }
+
+  footer a {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  ul.topnav li.dropdownIcon {
+    display: none;
+  }
+
+
+  
+@media (max-width: 400px) {
+    .searchicon, .dropdown, .top-search {
+      display: none;
+    }
+  
+  
+  }
+  
+  @media (max-width: 900px) {
+    .searchicon, .top-search {
+      display: none;
+    }
+  
+    ul.topnav li {
+      display: none;
+  
+    }
+  
+    .sign-outbtn {
+      font-size: 20px;
+      width: 90px;
+    }
+  
+    .dropbtn {
+      width: 100px;
+    }
+  
+    ul.topnav li a {
+      font-size: 20px;
+    }
+  
+    #internshipsContainer{
+      margin-bottom: 500px;
+      /* width: 100%; */
+    }
+  
+    ul.topnav li.dropdownIcon {
+      display: block;
+    }
+  
+    ul.topnav.responsive {
+      position: relative;
+    }
+  
+    ul.topnav.responsive li {
+      display: inline;
+      float: none;
+    }
+  
+    
+    ul.topnav.responsive li a {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 1600px) {
+    .top-input {
+      width: 300px;
+    }
+  
+  
+    .top-search {
+      margin-left: 0;
+    }
+  
+    .dropdown {
+      margin-right: 20px;
+    }
+  
+    #contentss {
+      width: 20%;
+    }
+  
+  }

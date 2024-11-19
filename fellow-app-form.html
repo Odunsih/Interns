@@ -10,58 +10,64 @@
 </head>
 <body>
     <nav>
-        <a href="general.html"><img class="logo" src="logo.png" alt="logo"></a>
-        <!-- <div class="searchicon"><input type="text" class="top-input" placeholder=" Search available internships"></div>
-            <button class="top-search">Search</button>
-         -->
-        <div class="dropdown">
-            <button class="dropbtn"><i class="bi bi-gear"></i> Account <i class="bi bi-chevron-down"></i></button>
-            <div class="dropdown-contents">
-               <button onclick="out()" class="sign-outbtn">sign-out</button>
-                <a href="fellow-profile.html">Profile</a>
-                <a href="">Settings</a>
-                <a href="">Applications</a>
+        <ul>
+       <li> <a href="general.html"><img class="logo" src="logo.png" alt="logo"></a></li>
+          <li><input id="SearchInput" type="text" class="top-input" placeholder=" Search available internships"></li>
+             <li><button id="Search" class="top-search">Search</button></li>           
+        </ul>
+      </nav>
+      <div class="full">
+        <div id="contentss">
+          <ul class="topnav" id="dropdownclick">
+            <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+              <li><a class="content" href="fellow-profile.html">Profile</a></li>
+              <li><a href="">Settings</a></li>
+              <li><a href="fellow-app.html">Applications</a></li>
+              <li><button onclick="out()" class="sign-outbtn">sign-out</button></li>
+              <li><button class="dropbtn"> Account </button></li>
+          </ul>
+            </div> 
+    
+        </nav>
+        <div class="container">
+            <h2>Internship Application Form</h2>
+           
+            <form>
+                <label>Surname</label>
+                <input id="Surname" type="text" placeholder="" name="Surname."required><br>
+                <label>First Name</label>
+                <input id="firstname" type="text" name="firstname"required><br>
+                <label>Date Of Birth</label>
+                <input id="DOB" type="date" name="dob"required><br>
+                <label>Address</label>
+                <input id="address" type="Address" name="address"required><br>
+                <label>State of origin</label>
+                <input id="state" type="text" name="state"required><br>
+                <label>local government area</label>
+                <input id="LGA" type="text" name="lga"required><br>
+                <!-- <label>Name of university</label>
+                <input id="nameOfUni" type="text" name="uni"required><br>
+                <label>Qualification</label>
+                <select id="Organization_Type" required>
+                    <option value="">Select degree Type</option>
+                    <option value="h">HND</option>
+                    <option value="b">B.SC / B.ENG</option>
+        
+                </select><br>
+                <label>Course of Study</label>
+                <input id="CourseOfStudy" type="text" name="study"required><br> -->
+                <button id="submit" class="submit" type="submit">Submit Application</button>
+            </form>
+            </div>
+             <!-- Popup Modal -->
+        <div id="popupMessage" class="popup hidden">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p id="popupText">This is a popup message!</p>
             </div>
         </div>
-     
-    </nav>
-    <div class="container">
-    <h2>Internship Application Form</h2>
+      </div>
    
-    <form>
-        <label>Surname</label>
-        <input id="Surname" type="text" placeholder="" name="Surname."required><br>
-        <label>First Name</label>
-        <input id="firstname" type="text" name="firstname"required><br>
-        <label>Date Of Birth</label>
-        <input id="DOB" type="date" name="dob"required><br>
-        <label>Address</label>
-        <input id="address" type="Address" name="address"required><br>
-        <label>State of origin</label>
-        <input id="state" type="text" name="state"required><br>
-        <label>local government area</label>
-        <input id="LGA" type="text" name="lga"required><br>
-        <label>Name of university</label>
-        <input id="nameOfUni" type="text" name="uni"required><br>
-        <label>Qualification</label>
-        <select id="Organization_Type" required>
-            <option value="">Select degree Type</option>
-            <option value="h">HND</option>
-            <option value="b">B.SC / B.ENG</option>
-
-        </select><br>
-        <label>Course of Study</label>
-        <input id="CourseOfStudy" type="text" name="study"required><br>
-        <button id="submit" class="submit" type="submit">Submit Application</button>
-    </form>
-    </div>
-     <!-- Popup Modal -->
-<div id="popupMessage" class="popup hidden">
-    <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <p id="popupText">This is a popup message!</p>
-    </div>
-</div>
 <footer>
     <a href="">About</a>
     <a href="">Contact us</a>

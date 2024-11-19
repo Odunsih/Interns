@@ -14,11 +14,43 @@ body{
 /* Navigation Bar */
 nav{
   display: flex;
-  background: #3cb043;
+  /* flex-wrap: wrap; */
+  background: #a1d6e2;
   height: 80px;
   width: 100%;
   justify-content: space-between;
 }
+
+.full {
+  display: flex;
+  height: 100%;
+  /* margin-bottom: 100px; */
+}
+
+#contentss{
+  /* margin-right: 0; */
+  width: 15%;
+  height: 100%;
+  background-color: #a1d6e2;
+}
+
+#contentss ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  /* background-color: #a1d6e2; */
+  height: 100%;
+  padding: 10px 0;
+  /* margin-left: 1000; */
+  /* width: 20%; */
+}
+
+#contentss ul li {
+  padding: 20px 0;
+  height: 100%;
+}
+
 
 label {
   font-family: "passero";
@@ -51,11 +83,11 @@ label {
       font-weight: 700;
       font-family: Arial, Helvetica, sans-serif;
       cursor: pointer;
-      background-color: #b0fc38;
+      background-color: #1995ad;
       box-shadow: 3px 3px 10px #413d3d;
       border-style: none;
       margin-top: 20px;
-      margin-left: -200px;
+      margin-left: -10px;
 }
 
 .dropdown {
@@ -79,7 +111,7 @@ label {
   height: 38px;
   font-weight: 400;
   font-size: 20px;
-
+  margin-bottom: 500px;
 
 }
 
@@ -97,28 +129,34 @@ label {
 
 }
 
-.dropdown-contents .sign-outbtn, a {
+/* .content {
+  padding-left: 60px;
+} */
+
+/* .dropdown-contents .sign-outbtn, a {
   display: block;
   text-decoration: none;
   padding: 10px;
-}
+} */
 
 .sign-outbtn {
-  width: 80%;
-  height: 62px;
+  width: 160px;
+  height: 42px;
   border-radius: 20px;
   border-style: none;
-  background-color: #3cb043;
+  background-color: #1995ad;
   color: #fff;
   font-size: 27px;
   font-weight: 500;
-  margin: 15px 50px 0 35px;
+  /* margin: 15px 50px 0 35px; */
   box-shadow: 1px 1px 10px black;
   cursor: pointer;
 }
 
 a{
   font-size: 25px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .dropdown:hover .dropdown-contents {
@@ -133,6 +171,7 @@ a{
   font-weight: bold;
   font-family: "passero"; */
   width: 200px;
+  margin-left: -150px;
 }
 nav ul{
   float: right;
@@ -152,6 +191,18 @@ nav ul li a{
   text-transform: uppercase;
 }
 
+.topnav {
+  text-align: left;
+}
+
+.dropdownIcon {
+  /* margin-bottom: 200px; */
+  display: none;
+}
+
+#internshipsContainer {
+  width: 85%;
+}
 
 .companies-container {
   display: flex;
@@ -170,6 +221,11 @@ nav ul li a{
   
 }
 
+.container {
+  margin: 10px;
+  /* font-size: 10px; */
+}
+
 .company-logo {
   width: 50%;
   height: 15px;
@@ -183,6 +239,7 @@ nav ul li a{
 
 .company-info {
   flex-grow: 1;
+  
 }
 
 .company-info h2 {
@@ -191,7 +248,7 @@ nav ul li a{
 }
 
 .company-info button {
-  background-color: #3cb043;
+  background-color: #1995ad;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -216,18 +273,23 @@ nav ul li a{
     margin: 0 auto;
     padding: 10px;
     width: 100%;
-    margin-top: 500px;
+    /* margin-top: 1000px; */
     background-color: #d8d6d6;
   }
 
   footer a {
     font-size: 15px;
+    padding: 10px;
   }
 
   footer p {
     font-size: 15px;
     margin-top: 20px;
     text-align: center;
+  }
+
+  ul.topnav li.dropdownIcon {
+    display: none;
   }
   
 @font-face {
@@ -236,54 +298,77 @@ nav ul li a{
 }
 
 
+@media (max-width: 400px) {
+  .searchicon, .dropdown, .top-search {
+    display: none;
+  }
 
-/* Media Queries */
-@media (max-width: 768px) {
-  /* Adjust nav layout */
 
-.top-input {
-  width: 100%;
 }
 
-.logo {
-  text-align: left;
+@media (max-width: 900px) {
+  .searchicon, .top-search {
+    display: none;
+  }
+
+  ul.topnav li {
+    display: none;
+
+  }
+
+  .sign-outbtn {
+    font-size: 20px;
+    width: 90px;
+  }
+
+  .dropbtn {
+    width: 100px;
+  }
+
+  ul.topnav li a {
+    font-size: 20px;
+  }
+
+  #internshipsContainer{
+    margin-bottom: 500px;
+    /* width: 100%; */
+  }
+
+  ul.topnav li.dropdownIcon {
+    display: block;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  
+  ul.topnav.responsive li a {
+    display: block;
+  }
 }
-  /* Company Cards */
-  .companies-container {
-    flex-direction: column; /* Stack cards */
-    align-items: center;
+
+@media (max-width: 1600px) {
+  .top-input {
+    width: 300px;
   }
 
-  .company-container {
-    width: 90%; /* Full width with padding */
-    margin: 10px 0;
+
+  .top-search {
+    margin-left: 0;
   }
 
-  .company-info h2 {
-    font-size: 16px; /* Smaller text */
+  .dropdown {
+    margin-right: 20px;
   }
 
-  .company-info button {
-    font-size: 14px; /* Smaller button text */
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Further adjust for very small screens */
-
-
-  .company-logo img {
-    width: 60px; /* Even smaller logo */
-    height: 60px;
+  #contentss {
+    width: 20%;
   }
 
-  .company-info h2 {
-    font-size: 14px;
-  }
-
-  footer p,
-  footer a {
-    font-size: 12px;
-  }
 }

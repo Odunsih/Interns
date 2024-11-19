@@ -3,6 +3,20 @@ function out() {
     window.location.href = "login.html";
 }
 
+function view() {
+    //redirect to fellow profile
+    window.location.href = "prof.html";
+}
+
+function dropdownMenu() {
+    var x = document.getElementById("dropdownclick");
+    if(x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 // Event listener for the "Edit Profile" button
 document.getElementById("editProfile").addEventListener("click", () => {
     const profileData = {

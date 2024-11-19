@@ -8,20 +8,32 @@
 </head>
 <body>
     <nav>
-        <a href="general.html"><img class="logo" src="logo.png" alt="logo"></a>
-        <div class="dropdown">
-            <button class="dropbtn"><i class="bi bi-gear"></i> Account <i class="bi bi-chevron-down"></i></button>
-            <div class="dropdown-contents">
-               <a href="fellow-profile.html">Profile</a>
-               <a href="">Settings</a>
-            </div>
+        <ul>
+       <li> <a href="general.html"><img class="logo" src="logo.png" alt="logo"></a></li>
+          <li><input id="SearchInput" type="text" class="top-input" placeholder=" Search available internships"></li>
+             <li><button id="Search" class="top-search">Search</button></li>           
+        </ul>
+      </nav>
+      <div class="full">
+        <div id="contentss">
+          <ul class="topnav" id="dropdownclick">
+            <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+              <li><a class="content" href="fellow-profile.html">Profile</a></li>
+              <li><a href="">Settings</a></li>
+              <li><a href="fellow-app.html">Applications</a></li>
+              <li><button onclick="out()" class="sign-outbtn">sign-out</button></li>
+              <li><button class="dropbtn"> Account </button></li>
+          </ul>
+            </div> 
+    
+        </nav>
+        <div class="container">
+            <h2>Notifications</h2>
+            <a class="details" href=""><div id="notifications"></div></a>
         </div>
-    </nav>
+      </div>
 
-    <div class="container">
-        <h2>Notifications</h2>
-        <a class="details" href=""><div id="notifications"></div></a>
-    </div>
+   
 </body>
 <script src="fellow-app.js"></script>
 </html>

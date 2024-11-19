@@ -5,13 +5,13 @@ html {
 body {
     justify-content: center;
     align-items: center;
-    background-color: #3cb043;
+    background-color: #1995ad;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: o auto;
 }
 
 header {
-    background-color: #b0fc38;
+    background-color: #a1d6e2;
 }
 
 .container-1 {
@@ -39,7 +39,7 @@ button {
     margin-top: 10px;
     border-radius: 10px;
     font-size: 20px;
-    background-color: #3cb043;
+    background-color: #1995ad;
     color: #fff;
     border-style: none;
     cursor: pointer;
@@ -52,10 +52,10 @@ button {
 
 form {
     padding: 50px;
-    background-color: aliceblue;
+    background-color: #f1f1f2;
     box-shadow: 10px 10px 10px black;
     border-radius: 40px;
-    height: 700px;
+    height: 500px;
     width: 563px;
     display: flex;
     flex-direction: column;
@@ -67,11 +67,6 @@ form {
 img {
     height: 650px;
     padding-top: 70px;
-    width: 1000px;
-}
-
-label { 
-    display: block;
 }
 
 h2 {
@@ -79,19 +74,23 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-label, input {
+select, input {
     margin: 5px;
     font-size: 20px;
     font-weight: 400;
     font-size: 30px;
+    width: 100%;
+    
 }
 
-input {
-    width: 500px;
-    height: 81px;
-    text-align: center;
-
+label {
+    font-size: 20px;
 }
+
+select {
+    height: 60px;
+}
+
 
 p {
     font-size: 20px;
@@ -104,15 +103,15 @@ a {
 }
 
 #submit {
-    width: 500px;
-    height: 91px;
+    width: 100%;
+    height: 60px;
     background-color: black;
     color: white;
     cursor: pointer;
 }
 
 #submit:hover {
-    background-color: #3cb043;
+    background-color: #1995ad;
     border-radius: 10px;
 }
 

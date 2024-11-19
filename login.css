@@ -1,17 +1,16 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     justify-content: center;
     align-items: center;
-    background-color: #3cb043;
+    background-color: #1995ad;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: o auto;
 }
 
 header {
-    background-color: #b0fc38;
+    background-color: #a1d6e2;
 }
 
 .container-1 {
@@ -39,7 +38,7 @@ button {
     margin-top: 10px;
     border-radius: 10px;
     font-size: 20px;
-    background-color: #3cb043;
+    background-color: #1995ad;
     color: #fff;
     border-style: none;
     cursor: pointer;
@@ -56,7 +55,7 @@ form {
     box-shadow: 10px 10px 10px black;
     border-radius: 40px;
     height: 500px;
-    width: 7000px;
+    width: 563px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,10 +73,6 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-label {
-    font-size: 30px;
-}
-
 select, input {
     margin: 5px;
     font-size: 20px;
@@ -85,6 +80,10 @@ select, input {
     font-size: 30px;
     width: 100%;
     
+}
+
+label {
+    font-size: 20px;
 }
 
 select {
@@ -111,7 +110,7 @@ a {
 }
 
 #submit:hover {
-    background-color: #3cb043;
+    background-color: #1995ad;
     border-radius: 10px;
 }
 
