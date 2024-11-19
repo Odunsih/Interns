@@ -259,7 +259,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: fixed;
+    /* position: fixed; */
   left: 0;
   bottom: 0;
     margin: 0 auto;
@@ -290,7 +290,7 @@ nav ul li a{
 
 
   
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .searchicon, .dropdown, .top-search, .top-input {
     display: none;
   }
@@ -316,6 +316,24 @@ nav ul li a{
 
   }
 
+  .company-logo img {
+    width: 50px;
+  }
+
+  .company-info h2 {
+    font-size: 1rem;
+  }
+
+  .company-info p {
+    font-size: 10px;
+  }
+
+  .company-info button {
+    width: 60px;
+    font-size: 10px;
+    margin-left: 3px;
+    height: 40px;
+  }
 
 
 }

@@ -69,7 +69,7 @@ h2{
 
 
   
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .searchicon, .dropdown, .top-search, .top-input {
         display: none;
       }

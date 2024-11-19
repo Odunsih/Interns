@@ -295,7 +295,7 @@ select{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: fixed;
+    /* position: fixed; */
   left: 0;
   bottom: 0;
     margin: 0 auto;
@@ -327,7 +327,7 @@ select{
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .searchicon, .dropdown, .top-search, .top-input {
     display: none;
   }
